@@ -10,12 +10,30 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Gallery</title>
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <div class="search-container">
+      <form class="search-form" id="search-form">
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button type="submit">
+          <span class="material-icons">search</span>
+        </button>
+      </form>
+    </div>
+  
+   <div class="gallery-container">
+    <div class="gallery">
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    </div>
+    <button type="button" class="load-more is-hidden">Load more</button>
+    <a class="btn-to-top" title="Return to top">
+      <span class="material-icons">arrow_upward</span>
+    </a>
+  </div>
+<!--     27079085-9660399119846a5966293c219
+ -->    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
 </html>
