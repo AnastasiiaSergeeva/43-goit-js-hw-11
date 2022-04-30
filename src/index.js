@@ -3,11 +3,9 @@ import { fetchImages } from './js/fetchImg';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-/* const axios = require('axios');
 
-axios.defaults.baseURL = 'https://pixabay.com/api/'; */
 const form = document.querySelector('#search-form');
-/* const searchButton = document.querySelector('.submit'); */
+
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more');
 const toTopBtn = document.querySelector('.btn-to-top');
